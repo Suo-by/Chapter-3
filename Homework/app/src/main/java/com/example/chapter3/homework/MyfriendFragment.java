@@ -1,6 +1,5 @@
 package com.example.chapter3.homework;
 
-
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.os.Bundle;
@@ -10,13 +9,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class PlaceholderFragment extends Fragment {
-
+public class MyfriendFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // TODO ex3-3: 修改 fragment_placeholder，添加 loading 控件和列表视图控件
-        return inflater.inflate(R.layout.fragment_placeholder, container, false);
+        return inflater.inflate(R.layout.fragment_myfriend, container, false);
     }
 
     @Override
@@ -24,8 +22,9 @@ public class PlaceholderFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         getView().postDelayed(new Runnable() {
-            final View showView = getView().findViewById(R.id.lvItemsp);
-            final View hideView = getView().findViewById(R.id.animation_viewp);
+
+            final View showView = getView().findViewById(R.id.lvItemsm);
+            final View hideView = getView().findViewById(R.id.animation_viewm);
 
             @Override
             public void run() {
@@ -34,6 +33,7 @@ public class PlaceholderFragment extends Fragment {
                 //淡入
                 showView.setAlpha(0);
                 showView.setVisibility(View.VISIBLE);
+
                 showView.animate()
                         .alpha(1)
                         .setDuration(2000);
@@ -51,4 +51,5 @@ public class PlaceholderFragment extends Fragment {
             }
         }, 3000);
     }
+
 }

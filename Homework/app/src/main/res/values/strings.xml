@@ -9,4 +9,27 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="messages">
+        <item ></item>
+        <item >Message 1</item>
+        <item >Message 2</item>
+        <item >Message 3</item>
+        <item >Message 4</item>
+        <item >Message 5</item>
+        <item >Message 6</item>
+        <item >Message 7</item>
+    </string-array>
+
+    <string-array name="friends">
+        <item ></item>
+        <item >Friend 1</item>
+        <item >Friend 2</item>
+        <item >Friend 3</item>
+        <item >Friend 4</item>
+        <item >Friend 5</item>
+        <item >Friend 6</item>
+        <item >Friend 7</item>
+    </string-array>
+
 </resources>
